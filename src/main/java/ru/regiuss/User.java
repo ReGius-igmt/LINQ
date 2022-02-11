@@ -12,6 +12,12 @@ public class User {
         this.languages = new ArrayList<>();
     }
 
+    public User(String name, int age, List<String> languages){
+        this.name = name;
+        this.age = age;
+        this.languages = languages;
+    }
+
     public String getName() {
         return name;
     }
@@ -34,5 +40,14 @@ public class User {
 
     public void setLanguages(List<String> languages) {
         this.languages = languages;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", languages=" + languages +
+                '}';
     }
 }
